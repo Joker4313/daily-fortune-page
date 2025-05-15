@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-slate-50 dark:bg-slate-900;
+}
+
+.mobile-screen-ratio {
+  width: 100%;
+  max-width: 400px; /* Max width for a phone-like view */
+  margin-left: auto;
+  margin-right: auto;
+  /* Aspect ratio 9:16 */
+  /* height will be calculated or managed by content, or set a vh unit */
+  /* For a strict 9:16 on a fixed width, height would be (width * 16 / 9) */
+  /* However, for a scrollable page, we usually let height be auto */
+  min-height: 100vh; /* Ensure it takes at least full viewport height */
+  display: flex;
+  flex-direction: column;
+}
+
